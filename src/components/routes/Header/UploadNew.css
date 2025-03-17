@@ -1,0 +1,85 @@
+/* src/components/routes/Other/Header/UploadNew.css */
+
+.int-chose{
+    font-size: 0.75rem;
+    margin: auto;
+}
+.header-mapping-container{
+    display: flex;
+    margin: auto;
+    justify-content: center; /* Center the columns horizontally */
+    gap: 25px; /* Adjust gap between columns */
+}
+
+.upload_new_headiiii {
+    color: #364C63;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: bold;
+    letter-spacing: 0.05rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.upload_new_headiiii:hover {
+    color: #EF6F53;
+}
+
+/* .mapping-column{
+    margin: auto;
+} */
+
+.upload_new_headii{
+    color: #364C63;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 0.05rem;
+    margin: auto;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.mapping-row{
+    color: #EF6F53;
+    margin: auto; 
+    font-size: 0.8rem;
+    font-weight: 600;
+    /* border: 1px solid; */
+    padding: 1px;
+
+}
+
+.selecttt{
+    font-size: 0.7rem;
+    width: 80%; 
+    background-color: white;
+    color: #323232;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+    margin: auto;
+    border: none;
+
+}
+
+.submitt-btnn{
+    background-color: #EF6F53;
+    color: white;
+    padding: 0.15rem;
+    font-size: 0.8rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 10%;
+    position: absolute; 
+    bottom: 10px; 
+    left: 50%; 
+    transform: translateX(-50%); /* Correct centering with transform */
+
+}
+
+.submitt-btnn:hover {
+    background-color: #df3319;
+}

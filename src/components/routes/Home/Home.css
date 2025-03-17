@@ -1,0 +1,65 @@
+/* src/components/routes/Home/Home.css */
+
+.everything{
+    background-color: white;
+    overflow-y: auto;
+}
+
+.main-first{
+    position: relative;
+    padding: 0;
+    margin: 0;
+    height:13vh;
+}
+
+.main-second{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+    height: 85vh;
+}
+
+
+.second-form{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+/* 
+.home_cont{
+    background-color: #364c63;
+    height: 85vh;
+}
+
+.home_headi{
+    font-size: 3rem;
+    color: white;
+    font-weight: 600;
+    background-color: #364c63;
+}
+
+.home-link{
+    display: inline-block;
+    margin-top: 8rem;
+    font-size: 1.25rem;
+    color: white;
+    text-decoration: none; 
+    background-color: #d85939;
+    padding: 10px; 
+    border-radius: 18px; 
+    transition: background-color 0.3s; 
+    cursor: pointer;
+    gap: 1rem;
+}
+
+.home-link:hover {
+    background-color: #fa3a0a; 
+    transform: translateY(2px); 
+}
+
+.homey{
+    margin-left: 2rem;
+} */

@@ -1,0 +1,264 @@
+/* src/components/routes/Forms/Messenger/Messenger.css */
+
+.messenger-container {
+    /* background-color: black; */
+    color: white;
+    padding: 1rem;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    padding-top: 70px; /* Add space for the download button */
+  }
+  
+  .sendinggg_twos{
+    display: flex;
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  .form-container {
+    width: 60%;
+    margin: auto;
+    padding: 1rem;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .form-section {
+    margin-bottom: 1rem;
+  }
+  
+  .form-label {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.1rem;
+    display: block;
+    text-align: left;
+    color: #EF6F53;
+  }
+  
+  .form-input,
+  .form-textarea {
+    width: 100%;
+    padding: 0.25rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    background-color: #253e5897;
+    color: white;
+    outline: none;
+  }
+  
+  .form-textarea {
+    height: 100px;
+  }
+  
+  .form-input:focus,
+  .form-textarea:focus {
+    border-color: #EF6F53;
+    color: white;
+  }
+  
+  .form-button {
+    background-color: #EF6F53;
+    color: white;
+    border: none;
+    width: 30%;
+    margin: auto;
+    padding: 0.25rem;
+    font-size: 0.8rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+  
+  .form-button:hover {
+    background-color: #d95b47;
+  }
+
+  .file-upload-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .file-input {
+    max-width: 94.5px;
+    padding: 0.125rem;
+  }
+
+  .file-name-input {
+    flex: 1;
+    background-color: #1e1e1e;
+    cursor: default;
+  }
+
+  .file-types {
+    font-size: 12px;
+    font-weight: normal;
+  }
+
+.header-buttons {
+    margin: 1rem;
+    padding: 15px;
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    color: white;
+    /* max-width: 300px; */
+}
+
+.header-buttons p {
+    margin-bottom: 1rem;
+    font-size: 14px;
+    color: #d95b47;
+    font-weight: bold;
+}
+
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.header-button {
+    padding: 8px 10px;
+    background-color: #d95b47;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+    transition: all 0.2s ease;
+}
+
+.header-button:hover {
+    background-color: #EF6F53;
+}
+
+/* Disabled state styles */
+.form-input:disabled,
+.file-input:disabled {
+    background-color: #f5f5f5;
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+/* Template placeholder styles */
+.form-textarea::placeholder {
+    color: #999;
+}
+
+.download-section {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 6px;
+    background-color: #f5f5f5;
+    transition: background-color 0.2s ease;
+    z-index: 10; /* Ensure it's above other elements */
+}
+
+.download-section:hover {
+    background-color: #e0e0e0;
+}
+
+.download-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.download-text {
+    font-size: 14px;
+    color: #333;
+    font-weight: 500;
+}
+
+.message-input-container,
+.caption-input-container {
+    margin-top: 8px;
+    background-color: #253e5897;
+    border-radius: 10px;
+    padding: 8px;
+}
+
+.formatting-buttons {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.format-btn {
+    background-color: #253e58;
+    color: white;
+    border: 1px solid white;
+    border-radius: 4px;
+    padding: 4px 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 14px;
+    min-width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.format-btn:hover {
+  border: 1px solid #EF6F53;
+}
+
+.format-btn:active {
+    transform: scale(0.95);
+}
+
+.message-input,
+.caption-input {
+    width: 100%;
+    padding: 0.25rem;
+    border: 1px solid white;
+    border-radius: 6px;
+    min-height: 100px;
+    font-size: 12px;
+    line-height: 1.5;
+    background-color: #253e5897;
+    color: white;
+    overflow-y: auto;
+    outline: none;
+    text-align: left;
+}
+
+.message-input[contenteditable]:empty:before,
+.caption-input[contenteditable]:empty:before {
+    content: attr(placeholder);
+    color: rgba(255, 255, 255, 0.6);
+    pointer-events: none;
+    font-style: italic;
+}
+
+.message-input:focus,
+.caption-input:focus {
+    outline: none;
+    border-color: #EF6F53;
+    box-shadow: 0 0 0 2px rgba(239, 111, 83, 0.25);
+}
+
+
+@media (max-width: 600px) {
+
+  .sendinggg_twos{
+      display: flex;
+      flex-direction: column;
+  }
+  .form-container {
+    width:90%;
+  }
+}

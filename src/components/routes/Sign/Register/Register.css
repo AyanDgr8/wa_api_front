@@ -1,0 +1,470 @@
+/* src/components/routes/Sign/Register/Register.css */
+
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+    background-color: white;
+    border-radius: 10px;
+    margin: auto;
+    max-width: 100%;
+}
+
+.register-headi {
+    color:#EF6F53;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 0.05rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.register-headi :focus {
+    color: #d15846;
+}
+
+.register-left {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.form-imppp{
+    display: flex;
+    gap: 20px;
+}
+
+.form-imp-1, .form-imp-2 {
+    flex: 1;
+    min-width: 45%;
+}
+
+.form-grouppp {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5rem;
+    position: relative;
+}
+
+.form-grouppp label {
+    font-size: 0.9rem;
+    color: #364C63;
+    font-weight: 600;
+    text-align: left;
+    margin-left: 0.25rem;
+}
+
+.form-grouppp input,
+.form-grouppp textarea,
+.form-grouppp select {
+    width: 100%;
+    padding: 0.2rem;
+    font-size: 0.9rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    transition: all 0.3s ease;
+    background-color: #f8f9fa;
+}
+
+.form-grouppp input:focus,
+.form-grouppp textarea:focus,
+.form-grouppp select:focus {
+    border-color: #EF6F53;
+    box-shadow: 0 0 0 2px rgba(239, 111, 83, 0.1);
+    background-color: white;
+}
+
+.form-grouppp textarea {
+    min-height: 60px;
+    resize: vertical;
+}
+
+.form-grouppp select {
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 0.7rem center;
+    background-size: 1em;
+}
+
+.register-left input:focus {
+    border-color: #EF6F53;
+}
+
+.register-left button {
+    background-color: #EF6F53;
+    color: white;
+    border: none;
+    width: 30%;
+    margin: auto;
+    padding: 0.25rem;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(239, 111, 83, 0.2);
+}
+
+.register-left button:hover {
+    background-color: #d15846;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 6px rgba(239, 111, 83, 0.3);
+}
+
+.register-left button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(239, 111, 83, 0.2);
+}
+
+.logis{
+    display: flex;
+    margin: auto;
+}
+
+.head2 {
+    color: #364C63;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.login-link {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: #EF6F53;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.login-link:hover {
+    text-decoration: underline;
+}
+
+.register-right {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-icon {
+    width: 100%;
+    max-width: 20rem;
+    border-radius: 5px;
+    margin-left: 10%;
+}
+
+.password-requirements {
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+}
+
+.password-requirements ul {
+    list-style: none;
+    padding-left: 0.5rem;
+    margin-top: 0.25rem;
+}
+
+.password-requirements li {
+    margin: 0.25rem 0;
+}
+
+/* Add red asterisk for required fields */
+label[for="password"]::after,
+label[for="confirm_password"]::after {
+    content: " *";
+    color: red;
+}
+
+/* Style for invalid password field */
+input[type="password"]:invalid {
+    border-color: #dc3545;
+}
+
+/* Style for valid password field */
+input[type="password"]:valid {
+    border-color: #28a745;
+}
+
+/* OTP Input Styles */
+.otp-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    margin: 2rem auto;
+}
+
+.otp-input-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+}
+
+.otp-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    width: 100%;
+}
+
+.otp-boxes input {
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background: white;
+    transition: all 0.3s ease;
+    padding: 0;
+    margin: 0;
+    caret-color: #007bff;
+}
+
+.otp-boxes input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0,123,255,0.25);
+    transform: scale(1.05);
+}
+
+.otp-boxes input:disabled {
+    background-color: #f8f9fa;
+    cursor: not-allowed;
+}
+
+.otp-timer {
+    color: #666;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.otp-actions {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.verify-btn, .resend-btn {
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 150px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.verify-btn {
+    background-color: #007bff;
+    color: white;
+    box-shadow: 0 2px 4px rgba(0,123,255,0.2);
+}
+
+.verify-btn:hover:not(:disabled) {
+    background-color: #0056b3;
+    box-shadow: 0 4px 8px rgba(0,123,255,0.3);
+    transform: translateY(-1px);
+}
+
+.resend-btn {
+    background-color: #6c757d;
+    color: white;
+    box-shadow: 0 2px 4px rgba(108,117,125,0.2);
+}
+
+.resend-btn:hover:not(:disabled) {
+    background-color: #5a6268;
+    box-shadow: 0 4px 8px rgba(108,117,125,0.3);
+    transform: translateY(-1px);
+}
+
+.verify-btn:disabled, .resend-btn:disabled {
+    background-color: #e9ecef;
+    color: #adb5bd;
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+
+.verify-btn:active, .resend-btn:active {
+    transform: translateY(1px);
+    box-shadow: none;
+}
+
+.otp-attempts {
+    color: #dc3545;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    text-align: center;
+}
+
+/* Alert Styles */
+.alert {
+    text-align: center;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.alert-link {
+    color: #721c24;
+    text-decoration: underline;
+    font-weight: bold;
+    transition: opacity 0.2s;
+}
+
+.alert-link:hover {
+    opacity: 0.8;
+    text-decoration: none;
+}
+
+/* Responsive Design */
+@media screen and (width: 1260px) and (height: 590px) {
+    .register-container {
+        height: 85vh;
+        padding: 0.5rem;
+        gap: 1rem;
+    }
+
+    .register-left {
+        width: 65%;
+        padding: 1rem;
+        margin: 0;
+    }
+
+    .register-right {
+        width: 25%;
+    }
+
+    .form-imppp {
+        gap: 1.5rem;
+    }
+
+    .form-grouppp {
+        margin-bottom: 0.4rem;
+    }
+
+    .form-grouppp input,
+    .form-grouppp textarea,
+    .form-grouppp select {
+        padding: 0.15rem;
+        font-size: 0.85rem;
+    }
+
+    .form-grouppp label {
+        font-size: 0.85rem;
+        margin-bottom: 0.2rem;
+    }
+
+    .form-grouppp textarea {
+        min-height: 60px;
+    }
+
+    .register-left button {
+        padding: 0.2rem;
+        margin-top: 0.5rem;
+        width: 25%;
+    }
+
+    .logis {
+        margin-top: 0.3rem;
+    }
+
+    .head2 {
+        font-size: 0.85rem;
+        margin-right: 0.3rem;
+    }
+
+    .login-link {
+        margin-top: 0.3rem;
+        font-size: 0.85rem;
+    }
+
+    .register-icon {
+        max-width: 15rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .register-left {
+        width: 75%;
+        margin: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .register-container {
+        flex-direction: column-reverse;
+        height: auto;
+        padding: 1rem;
+    }
+
+    .register-left {
+        width: 90%;
+        margin: 1rem auto;
+        padding: 1.5rem;
+    }
+
+    .form-imppp {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .form-imp-1, .form-imp-2 {
+        width: 100%;
+    }
+
+    .form-imp-2 {
+        margin-left: 0;
+    }
+
+    .register-left button {
+        width: 60%;
+    }
+}
+
+@media (max-width: 480px) {
+    .register-left {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .form-grouppp input,
+    .form-grouppp textarea,
+    .form-grouppp select {
+        padding: 0.5rem;
+    }
+
+    .register-left button {
+        width: 80%;
+    }
+
+    .otp-boxes {
+        gap: 8px;
+    }
+
+    .otp-boxes input {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+    }
+}

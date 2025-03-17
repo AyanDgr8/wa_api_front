@@ -1,0 +1,85 @@
+/* src/components/routes/Other/Header/Header.css */
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    height: 10vh;
+    padding: 2rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    height: 3.25rem;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 2rem; /* Add space between elements */
+}
+
+
+/* File upload section */
+.file-upload-section {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+}
+
+.file-icon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.file-icon:hover {
+    transform: scale(1.25);
+}
+
+
+.file-upl {
+    font-size: 0.85rem;
+    color: #666;
+    margin-right: 0.5rem;
+    margin-left: -1rem;
+}
+
+/* Profile icon styling */
+.pro-icon {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 50%;
+}
+
+.pro-icon:hover {
+    transform: scale(1.25);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.688);
+}
+
+/* Add this to the Header.css file */
+.reports-link {
+    text-decoration: none;
+    margin-right: 20px;
+  }
+  
+  .reports-button {
+    /* background-color: #EF6F53; */
+    background-color: rgb(228, 228, 228);
+    color: #EF6F53;
+    border: none;
+    padding: 4px 8px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .reports-button:hover {
+    background-color: whitesmoke;
+  }
